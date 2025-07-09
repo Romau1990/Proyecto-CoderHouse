@@ -93,3 +93,77 @@
         }
     }
 }
+
+
+//services main
+
+.services__main{
+    padding: 0 1rem; 
+    max-width: 70rem;
+    min-height: 40rem;
+    margin: auto;
+
+    .services__main__list{
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 5rem 0;
+        row-gap: 2rem;
+
+        .list__card{
+            display: flex;
+            column-gap: 2rem;
+            align-items: center;
+            border-top: 1px solid rgb(207, 207, 207);
+            border-bottom: 1px solid rgb(207, 207, 207);
+            min-width: 50rem;
+
+            .list__card__info{
+                display: flex;
+                flex-flow: column nowrap;
+                row-gap: .5rem;
+
+                .list__card__info__title{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #C1A574;
+                }
+            }
+
+        }
+    }   
+}
+
+
+//About us main
+
+
+.about-us__main{
+    padding: 0 1rem;
+    max-width: 50rem;
+    margin: auto;
+
+    .about-us__section{
+        min-height: 20rem;
+        padding: 2rem 5rem;
+        margin: 10rem 0;
+
+        display: flex; 
+        flex-flow: column nowrap;
+        justify-content: center;
+        color: white;
+        border-radius: 1rem;
+
+        background-image: url("images/about-us/background.avif");
+        background-size: cover;
+        box-shadow: 8px 10px 25px 8px rgb(123, 123, 123);
+
+        .about-us__section__title{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
+//Contact main
+
