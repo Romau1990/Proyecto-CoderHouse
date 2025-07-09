@@ -1,0 +1,31 @@
+
+@use '../variables/variables' as *;
+@use '../mixins/mixins' as *;
+
+
+//PRODUCT ASIDE
+
+.product__aside{
+    width: auto;
+    min-height: 40rem;
+    border-right: 1px solid rgb(200, 200, 200);
+    padding: 0 1rem;
+
+    .product__categories__title{
+        margin: 2rem 0;    
+        font-weight:bold;
+    }
+
+    .product__categories__options{
+        display: flex; 
+        flex-flow: column nowrap;
+        justify-content: center;
+        row-gap: .5rem;
+    }
+
+    .product__price__range{
+        display: flex;
+        align-items: center;
+    }
+
+}
