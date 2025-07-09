@@ -75,6 +75,11 @@
                     background-color: rgba(0,0,0,.4);
                     color: white;
                 }
+
+                .carousel-item__img{
+                    height: 35rem;
+                    object-fit: cover;
+                }
             }
 
         }
