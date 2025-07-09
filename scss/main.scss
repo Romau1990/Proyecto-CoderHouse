@@ -1,7 +1,9 @@
+@use 'generals/generals';
 @use 'partials/header';
 @use 'partials/body';
 @use 'partials/aside';
 @use 'partials/footer.scss';
 @use 'components/cards.scss';
+@use 'media-queries/media-queries';
 
 //acá no tocar nada
