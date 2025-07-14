@@ -128,23 +128,25 @@
 }
 
 @media(max-width: 860px){
-    
-    .policies__section{
+
+    .page-wrapper .main .policies__section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;  
-    }
-    .policy__section{  
-        min-height: 12rem;
-    }
+        
+        .policy__section{  
+            min-height: 12rem;
+        }
+    }  
 }
 
 @media(max-width: 500px){
-    .policies__section{
+    .page-wrapper .main .policies__section{
         grid-template-columns: 100%;
         row-gap: 1rem;
-    }
-    .policy__section{  
-        min-height: auto;
-    }
+
+        .policy__section{  
+            min-height: 12rem;
+        }
+    }  
 }

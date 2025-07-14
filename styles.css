@@ -136,7 +136,6 @@ hr {
   padding: 1rem;
   border: 2px solid #6B705C;
   font-size: 0.8rem;
-  flex: 1 1 10rem;
 }
 
 .product__page-wrapper {
@@ -506,22 +505,22 @@ hr {
   }
 }
 @media (max-width: 860px) {
-  .policies__section {
+  .page-wrapper .main .policies__section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
   }
-  .policy__section {
+  .page-wrapper .main .policies__section .policy__section {
     min-height: 12rem;
   }
 }
 @media (max-width: 500px) {
-  .policies__section {
+  .page-wrapper .main .policies__section {
     grid-template-columns: 100%;
     row-gap: 1rem;
   }
-  .policy__section {
-    min-height: auto;
+  .page-wrapper .main .policies__section .policy__section {
+    min-height: 12rem;
   }
 }
 
