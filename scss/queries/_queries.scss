@@ -1,3 +1,5 @@
+@use '../mixins/mixins' as *;
+@use '../variables/variables' as *;
 
 @media(max-width: 800px){
     .nav___link{
@@ -19,7 +21,7 @@
     .carousel-item__body{
         height: 10rem;
         top: 30%;
-        width: 100%;
+        width: 100% !important;
     }
 
     .carousel-inner{
@@ -67,9 +69,7 @@
     //    display: flex;
     // }
 
-
 }
-
 
 
 @media(max-width: 810px){
@@ -94,6 +94,34 @@
 
 
 @media(max-width: 850px){
+
+    .product__page-wrapper{
+        @include flex-column;
+    }
+
+    .product__aside{
+        .hidden-filterbar{
+            display: flex !important;
+            .filterbar{
+                display: flex;
+                align-items: center;
+                height: 5rem;
+                justify-content: space-between;   
+                padding: 0;
+
+                .filter-button{
+                    border: 1px solid $reseda;
+                    padding: .3rem 1rem;
+                }
+
+            }
+        }
+    }
+
+    .product__categories{
+        display: none;
+    }
+
     .product__card{
         flex-grow: 1;
     }
