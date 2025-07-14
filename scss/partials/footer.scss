@@ -17,8 +17,7 @@
 
     .footer__section{
         justify-self: center;
-        display: flex; 
-        flex-flow: column nowrap;
+        @include flex-column;
         padding: 0 1rem;
 
         .footer__title{
@@ -27,8 +26,7 @@
         }
 
         .contact-data{
-            display: flex; 
-            flex-flow: column nowrap; 
+            @include flex-column;
             row-gap: .5rem;
 
             .contact-data__map{
@@ -37,8 +35,7 @@
         }
 
         .faqs__links{
-            display: flex; 
-            flex-flow: column nowrap;
+            @include flex-column;
             row-gap: 1rem;
         }
 
