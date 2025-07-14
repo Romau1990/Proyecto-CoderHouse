@@ -76,12 +76,13 @@
     .contact__main{
         display: flex;
         flex-flow: column wrap;
+        align-items: center;
         row-gap: 4rem;
     }
     
     .info__section{
         width: 100%;
-        border:none;
+        border:none !important;
         align-items: center;
     }
 
