@@ -48,17 +48,25 @@
         width: 100%;
     }
 
+    .services__main{
+        padding: 0;
+    }
+
     .list__card{
         display: flex;
         flex-flow: row wrap;
-        min-width: auto;
     }
 
     .list__card img{
-        width: 100%;
+        width: 100vw;
         height: 10rem;
         object-fit: cover;
     }
+
+    // .list__card__info{
+    //    display: flex;
+    // }
+
 
 }
 
