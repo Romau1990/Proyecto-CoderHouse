@@ -9,10 +9,11 @@
     grid-template-rows: auto, 3rem;
     margin-top: 2rem;   
     column-gap: 3rem;
-    background-color: #d5a992;
+    background-color: $buff;
 
     p{
         color: white;
+        @include textfont;
     }
 
     .footer__section{
@@ -22,7 +23,7 @@
 
         .footer__title{
             margin-bottom: 2rem;
-            font-weight: bold;
+            @include titlefont;
         }
 
         .contact-data{
@@ -56,10 +57,9 @@
     }
     
     .copyright__section{
-        background-color: var(--buff);
+        background-color: $desert-sand;
         grid-column: 1/4;
-        grid-row: 2/3;
-        color: white;
+        grid-row: 2/3; 
         font-size: .7rem;
         display: flex; 
         height: 2rem;
@@ -67,6 +67,10 @@
         justify-content: center;
         margin-top: 2rem;
         padding: 2rem 1rem;
+        p{
+            color: rgb(75, 75, 75);
+            @include smallfont;
+        }
     }
     
 }

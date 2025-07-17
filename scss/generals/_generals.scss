@@ -1,3 +1,5 @@
+@use '../mixins/mixins' as *;
+
 body{
     margin: 0;
     padding: 6rem 0 0 0;
@@ -13,9 +15,9 @@ a, button, img, label, input[type="submit"]{
 }
 
 a{
+    @include linkfont;
     text-decoration: none; 
     text-wrap: nowrap;
-    font-family: Lato; 
     color: white;
     transition: .1s ease-in-out;
 }

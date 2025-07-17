@@ -11,9 +11,10 @@ a, button, img, label, input[type=submit] {
 }
 
 a {
+  font-family: "montserrat";
+  font-size: 0.9rem;
   text-decoration: none;
   text-wrap: nowrap;
-  font-family: Lato;
   color: white;
   transition: 0.1s ease-in-out;
 }
@@ -56,7 +57,7 @@ hr {
   row-gap: 1rem;
 }
 .header .navbar {
-  background-color: #CB997E;
+  background-color: #6B705C;
   position: fixed;
   top: 0;
   left: 0;
@@ -69,6 +70,9 @@ hr {
 }
 .header .navbar .nav-link {
   color: white;
+  font-family: "montserrat";
+  font-size: 1rem;
+  font-weight: bold;
 }
 .header .navbar .navbar-toggler {
   border: 1px solid white;
@@ -243,9 +247,14 @@ hr {
   row-gap: 0.5rem;
 }
 .services__main .services__main__list .list__card .list__card__info .list__card__info__title {
-  font-size: 1.2rem;
+  font-family: "montserrat";
+  font-size: 1.6rem;
   font-weight: bold;
   color: #C1A574;
+}
+.services__main .services__main__list .list__card .list__card__info .list__card__info__p {
+  font-family: "mw";
+  font-size: 0.9rem;
 }
 
 .about-us__main {
@@ -267,8 +276,13 @@ hr {
   box-shadow: 8px 10px 25px 8px rgb(123, 123, 123);
 }
 .about-us__main .about-us__section .about-us__section__title {
-  font-size: 2rem;
   font-weight: bold;
+  font-family: "montserrat";
+  font-size: 1.6rem;
+}
+.about-us__main .about-us__section .about-us__section__description {
+  font-family: "mw";
+  font-size: 0.9rem;
 }
 
 .contact__main {
@@ -277,6 +291,8 @@ hr {
   padding: 0 1rem;
   display: grid;
   grid-template-columns: 2fr 2fr;
+  font-family: "mw";
+  font-size: 0.9rem;
 }
 .contact__main .info__section {
   grid-column: 1/2;
@@ -294,7 +310,8 @@ hr {
   grid-column: 2/3;
   min-height: 20rem;
   width: 25rem;
-  border: 1px solid black;
+  background-image: url("/images/about-us/background.avif");
+  box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.365);
   border-radius: 1rem;
   margin: auto;
   display: flex;
@@ -316,6 +333,7 @@ hr {
 }
 .contact__main .contact__section .contact__section__form .form__section .form__label {
   flex: 1;
+  color: white;
 }
 .contact__main .contact__section .contact__section__form .form__section .form__input {
   flex: 3;
@@ -344,7 +362,9 @@ hr {
   height: 2rem;
   margin: auto;
   border-radius: 0.4rem;
-  background-color: transparent;
+  border: 1px solid white;
+  background-color: #6B705C;
+  color: white;
 }
 
 .footer {
@@ -355,10 +375,12 @@ hr {
   grid-template-rows: auto, 3rem;
   margin-top: 2rem;
   column-gap: 3rem;
-  background-color: #d5a992;
+  background-color: #CB997E;
 }
 .footer p {
   color: white;
+  font-family: "mw";
+  font-size: 0.9rem;
 }
 .footer .footer__section {
   justify-self: center;
@@ -368,7 +390,8 @@ hr {
 }
 .footer .footer__section .footer__title {
   margin-bottom: 2rem;
-  font-weight: bold;
+  font-family: "montserrat";
+  font-size: 1.6rem;
 }
 .footer .footer__section .contact-data {
   display: flex;
@@ -396,10 +419,9 @@ hr {
   filter: brightness(0);
 }
 .footer .copyright__section {
-  background-color: var(--buff);
+  background-color: #DDBEA9;
   grid-column: 1/4;
   grid-row: 2/3;
-  color: white;
   font-size: 0.7rem;
   display: flex;
   height: 2rem;
@@ -407,6 +429,11 @@ hr {
   justify-content: center;
   margin-top: 2rem;
   padding: 2rem 1rem;
+}
+.footer .copyright__section p {
+  color: rgb(75, 75, 75);
+  font-family: "mw";
+  font-size: 0.6rem;
 }
 
 @media (max-width: 800px) {
@@ -522,6 +549,20 @@ hr {
   .page-wrapper .main .policies__section .policy__section {
     min-height: 12rem;
   }
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/_fonts.scss") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "mw";
+  src: url("../../fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf");
 }
 
 /*# sourceMappingURL=styles.css.map */

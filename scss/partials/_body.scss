@@ -159,9 +159,13 @@
                 row-gap: .5rem;
 
                 .list__card__info__title{
-                    font-size: 1.2rem;
+                    @include titlefont;
                     font-weight: bold;
                     color: #C1A574;
+                }
+
+                .list__card__info__p{
+                    @include textfont;
                 }
             }
 
@@ -193,8 +197,11 @@
         box-shadow: 8px 10px 25px 8px rgb(123, 123, 123);
 
         .about-us__section__title{
-            font-size: 2rem;
             font-weight: bold;
+            @include titlefont;
+        }
+        .about-us__section__description{
+            @include textfont;
         }
     }
 }
@@ -208,6 +215,7 @@
     padding: 0 1rem;
     display: grid; 
     grid-template-columns: 2fr 2fr;
+    @include textfont;
 
     .info__section{
         grid-column: 1/2;
@@ -226,7 +234,8 @@
         grid-column: 2/3;
         min-height: 20rem;
         width: 25rem;
-        border: 1px solid black;
+        background-image: url('/images/about-us/background.avif');
+        box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.365);
         border-radius: 1rem;
         margin: auto;
         @include flex-column;
@@ -246,6 +255,7 @@
 
                 .form__label{
                     flex: 1;
+                    color: white;
                 }
 
                 .form__input{
@@ -279,7 +289,9 @@
                 height: 2rem;
                 margin: auto;
                 border-radius: .4rem;
-                background-color: transparent;
+                border: 1px solid white;   
+                background-color: $reseda;
+                color: white;
             }
 
         }
