@@ -552,17 +552,17 @@ hr {
 }
 @font-face {
   font-family: "Lato";
-  src: url("/fonts/_fonts.scss") format("woff2");
+  src: url("../fonts/Lato/Lato-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
-  font-family: "mw";
-  src: url("/fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf");
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather/Merriweather-VariableFont.ttf") format("truetype");
 }
 
 /*# sourceMappingURL=styles.css.map */
