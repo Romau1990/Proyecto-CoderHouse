@@ -552,11 +552,11 @@ hr {
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "mw";
-  src: url("../fonts/Merriweather/Merriweather-VariableFont.ttf") format("truetype");
+  src: url("/fonts/Merriweather/static/Merriweather_120pt-Medium.ttf") format("truetype");
 }
 
 /*# sourceMappingURL=styles.css.map */
