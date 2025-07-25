@@ -90,9 +90,12 @@
                 background-color: $ash-gray;
                 padding: 1rem;
                 @include flex-column;
+                justify-content: space-between;
                 gap: .5rem;
                 flex: 1 1 14rem;
                 height: auto;
+
+                
 
                 .product__card__title{
                     font-size: 1rem;
@@ -107,6 +110,10 @@
 
                 .product__card__description{
                     font-size: .9rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4; /* Cantidad de líneas que querés mostrar */
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
 
                 .product__card__price-container{
