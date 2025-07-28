@@ -15,6 +15,10 @@
         left: 0;
         right: 0;
         z-index: 100;
+        animation-timeline: scroll();
+        animation-name: goTransparent;
+        // animation-fill-mode:both;
+        animation-direction:normal;
 
         .nav-logo{
             filter:invert(1) brightness(1000);
@@ -38,6 +42,14 @@
 
     }
 
+    @keyframes goTransparent{
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: .5;
+        }
+    }
 
     .breadcrumb{
         height: auto;

@@ -303,3 +303,10 @@
         }
     }
 }
+
+.page-anchor{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    scroll-behavior: smooth;
+}

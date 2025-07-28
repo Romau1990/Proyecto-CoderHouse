@@ -77,6 +77,9 @@ hr {
   left: 0;
   right: 0;
   z-index: 100;
+  animation-timeline: scroll();
+  animation-name: goTransparent;
+  animation-direction: normal;
 }
 .header .navbar .nav-logo {
   filter: invert(1) brightness(1000);
@@ -94,6 +97,14 @@ hr {
 }
 .header .navbar .navbar-toggler:focus {
   box-shadow: none;
+}
+@keyframes goTransparent {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
 .header .breadcrumb {
   height: auto;
@@ -384,6 +395,13 @@ hr {
   border: 1px solid white;
   background-color: #6B705C;
   color: white;
+}
+
+.page-anchor {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  scroll-behavior: smooth;
 }
 
 .footer {
