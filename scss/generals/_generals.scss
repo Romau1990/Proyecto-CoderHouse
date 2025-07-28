@@ -27,23 +27,23 @@ a:hover{
 }
 
 h1{
-    font-family: 'mw'; 
+    @include titlefont; 
     font-weight: bold;
     font-size: 2rem; 
 }
 
 p{
-    font-family: 'Montserrat'; 
+    @include textfont;
     font-weight: 400;
     margin: 0.2rem; 
 }
 
 li{
-    font-family: 'Montserrat';
+    @include textfont;
 }
 
 strong{
-   font-family: 'Montserrat'; 
+   @include textfont; 
    font-size: .8rem; 
 }
 
